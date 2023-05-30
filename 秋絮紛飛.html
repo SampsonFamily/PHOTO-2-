@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>影像處理練習</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../res/common.css" rel="stylesheet">
+	<link href="../res/styles.css" rel="stylesheet">
+	<script>
+document.onkeydown = function(event) {
+	switch(event.keyCode) {
+		case 27: // esc
+		case 38: // up
+			location.href = '../index.html';
+			break;
+		case 37: // back
+			location.href = '%E7%85%99%E9%9B%A8%E6%9C%A6%E6%9C%A7.html';
+			break;
+		case 39: // forward
+			location.href = '%E6%8B%BC%E8%B2%BC%E9%A6%AC%E8%B3%BD%E5%85%8B.html';
+			break;
+	}
+};
+</script>
+<link rel="alternate" href="../album.rss" type="application/rss+xml">
+</head>
+
+<body id="slide-page" class="responsive">
+	<header class="autohide">
+		<div id="nav">
+			<a class="btn" href="../index.html" title="To index page"><img src="../res/icon/thin/dark/index.svg" alt="To index page"></a>
+			
+			
+			<a class="btn" href="%E7%85%99%E9%9B%A8%E6%9C%A6%E6%9C%A7.html" title="Previous page"><img src="../res/icon/thin/dark/prev.svg" alt="Next page"></a>
+			<a class="btn" href="%E6%8B%BC%E8%B2%BC%E9%A6%AC%E8%B3%BD%E5%85%8B.html" title="Next page"><img src="../res/icon/thin/dark/next.svg" alt="Next page"></a>
+		</div>
+	</header>
+	
+	<div id="slideimage">
+		<div id="imagewrap">
+			<img src="%E7%A7%8B%E7%B5%AE%E7%B4%9B%E9%A3%9B.jpg" width="556" height="800" alt="秋絮紛飛">		
+		</div>		
+		<a href="%E7%85%99%E9%9B%A8%E6%9C%A6%E6%9C%A7.html" id="slide-prev" title="Previous page"></a>
+		<a href="%E6%8B%BC%E8%B2%BC%E9%A6%AC%E8%B3%BD%E5%85%8B.html" id="slide-next" title="Next page"></a>
+	</div>
+			
+	<footer class="autohide" id="caption" style="max-width: 556px">
+		<div id="imagetitle">秋絮紛飛</div>
+
+		
+	</footer>
+	
+	<script src="../res/slide.js"></script>
+
+<div id="jalbumwidgetcontainer"></div>
+<script>
+_jaSkin = "Minimal";
+_jaStyle = "dark.css";
+_jaVersion = "30.1";
+_jaGeneratorType = "desktop";
+_jaLanguage = "zh";
+_jaPageType = "slide";
+_jaRootPath = "..";
+_jaGuid = "1680585184756";
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "http"+("https:"==document.location.protocol?"s":"")+"://jalbum.net/widgetapi/load.js";
+document.getElementById("jalbumwidgetcontainer").appendChild(script);
+</script>
+
+</body>
+</html>
